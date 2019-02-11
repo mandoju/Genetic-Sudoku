@@ -7,5 +7,5 @@ def mutation(gen, mutationRate):
     
     for idx,val in enumerate(result):
         if(np.random.random() < mutationRate ):
-            result[idx] = np.random.randint(10)
+            result[idx] = np.random.randint(1,high=10)
     return result
